@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #00FFFF; /* cyan-400 - Electric cyan for primary actions and focus */
+  --color-primary-50: #ECFEFF; /* cyan-50 */
+  --color-primary-100: #CFFAFE; /* cyan-100 */
+  --color-primary-200: #A5F3FC; /* cyan-200 */
+  --color-primary-300: #67E8F9; /* cyan-300 */
+  --color-primary-400: #00FFFF; /* cyan-400 - Primary electric cyan */
+  --color-primary-500: #06B6D4; /* cyan-500 */
+  --color-primary-600: #0891B2; /* cyan-600 */
+  --color-primary-700: #0E7490; /* cyan-700 */
+  --color-primary-800: #155E75; /* cyan-800 */
+  --color-primary-900: #164E63; /* cyan-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #FF1493; /* pink-500 - Hot pink for secondary emphasis and energy */
+  --color-secondary-50: #FDF2F8; /* pink-50 */
+  --color-secondary-100: #FCE7F3; /* pink-100 */
+  --color-secondary-200: #FBCFE8; /* pink-200 */
+  --color-secondary-300: #F9A8D4; /* pink-300 */
+  --color-secondary-400: #F472B6; /* pink-400 */
+  --color-secondary-500: #FF1493; /* pink-500 - Hot pink secondary */
+  --color-secondary-600: #DB2777; /* pink-600 */
+  --color-secondary-700: #BE185D; /* pink-700 */
+  --color-secondary-800: #9D174D; /* pink-800 */
+  --color-secondary-900: #831843; /* pink-900 */
+
+  /* Accent Colors */
+  --color-accent: #00FF41; /* green-400 - Matrix green for success states and highlights */
+  --color-accent-50: #F0FDF4; /* green-50 */
+  --color-accent-100: #DCFCE7; /* green-100 */
+  --color-accent-200: #BBF7D0; /* green-200 */
+  --color-accent-300: #86EFAC; /* green-300 */
+  --color-accent-400: #00FF41; /* green-400 - Matrix green accent */
+  --color-accent-500: #22C55E; /* green-500 */
+  --color-accent-600: #16A34A; /* green-600 */
+  --color-accent-700: #15803D; /* green-700 */
+  --color-accent-800: #166534; /* green-800 */
+  --color-accent-900: #14532D; /* green-900 */
+
+  /* Background Colors */
+  --color-background: #000000; /* black - Pure black for maximum neon contrast */
+  --color-surface: #111111; /* gray-900 - Subtle lift for content containers and cards */
+  --color-surface-light: #1F1F1F; /* gray-800 */
+  --color-surface-lighter: #2A2A2A; /* gray-700 */
+
+  /* Text Colors */
+  --color-text-primary: #FFFFFF; /* white - Clean white for primary readability */
+  --color-text-secondary: #CCCCCC; /* gray-300 - Muted white for hierarchy and metadata */
+  --color-text-muted: #999999; /* gray-400 */
+  --color-text-disabled: #666666; /* gray-500 */
+
+  /* Status Colors */
+  --color-success: #00FF41; /* green-400 - Bright green for positive confirmations */
+  --color-warning: #FFFF00; /* yellow-400 - Electric yellow for attention without alarm */
+  --color-error: #FF0040; /* red-500 - Bright red for clear problem indication */
+
+  /* Glow Effects */
+  --glow-primary: 0 0 20px rgba(0, 255, 255, 0.5);
+  --glow-secondary: 0 0 20px rgba(255, 20, 147, 0.5);
+  --glow-accent: 0 0 20px rgba(0, 255, 65, 0.5);
+  --glow-error: 0 0 20px rgba(255, 0, 64, 0.5);
+
+  /* Animation Timing */
+  --transition-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@layer base {
+  body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer components {
+  .neon-glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .neon-glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+
+  .neon-glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+
+  .neon-glow-error {
+    box-shadow: var(--glow-error);
+  }
+
+  .transition-smooth {
+    transition: all 300ms var(--transition-smooth);
+  }
+
+  .terminal-border {
+    border: 1px solid var(--color-primary);
+  }
+
+  .terminal-border-glow {
+    border: 1px solid var(--color-primary);
+    box-shadow: var(--glow-primary);
+  }
+}

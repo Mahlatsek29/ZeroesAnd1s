@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroesAnd1s - Data Analytics & Software Development | Binary to Brilliance</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="Transform your business with cutting-edge data analytics and custom software development. ZeroesAnd1s delivers innovative solutions that turn binary data into brilliant insights.">
+    <script>
+        // Redirect to homepage after a brief moment
+        setTimeout(function() {
+            window.location.href = 'pages/homepage.html';
+        }, 100);
+    </script>
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsynthwave1376back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body>
+    <div class="loading-container">
+        <h1>ZeroesAnd1s</h1>
+        <p>Binary to Brilliance - Loading...</p>
+    </div>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
